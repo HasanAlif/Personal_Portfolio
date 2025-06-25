@@ -23,7 +23,7 @@ const Achivements = ({ title, amount, children }) => {
         <motion.span
           className="text-2xl lg:text-xl font-light text-yellow-500"
           whileInView={() => count(amount)}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           {number}
         </motion.span>
