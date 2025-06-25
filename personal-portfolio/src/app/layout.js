@@ -10,8 +10,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body className= {outfit.className}>{children}</body>
+    <html lang="en">
+      <body className={outfit.className} suppressHydrationWarning={true}>
+        {children}
+      </body>
     </html>
   );
 }

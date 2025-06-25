@@ -8,9 +8,10 @@ import {
   useSpring,
   delay,
 } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [hasMounted, setHasMounted] = useState(false);
   const [windowOffset, setWindowOffset] = useState({
     innerWidth: 0,
     innerHeight: 0,
@@ -20,22 +21,24 @@ const Hero = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
+  useEffect(() => {
+    setHasMounted(true);
+    if (typeof window !== "undefined") {
+      setWindowOffset({
+        innerWidth: window.innerWidth,
+        innerHeight: window.innerHeight,
+      });
+    }
+  }, []);
+
   const handleMouseMove = (e) => {
     const { clientX, clientY } = e;
     x.set(clientX);
     y.set(clientY);
-
-    console.log(clientX, clientY, x, y);
   };
 
   const handleMouseEnter = () => {
-    setWindowOffset({
-      innerWidth: window.innerWidth,
-      innerHeight: window.innerHeight,
-    });
     setMouseMove(true);
-
-    console.log(innerWidth, innerHeight);
   };
 
   const { innerWidth, innerHeight } = windowOffset;
@@ -45,6 +48,11 @@ const Hero = () => {
 
   const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30]);
   const rotateX = useTransform(ySpring, [0, innerHeight], [10, -50]);
+
+  
+  if (!hasMounted || innerWidth === 0 || innerHeight === 0) {
+    return null;
+  }
 
   return (
     <div
