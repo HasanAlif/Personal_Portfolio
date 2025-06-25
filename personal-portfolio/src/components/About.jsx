@@ -41,7 +41,12 @@ const About = () => {
         </div>
       </div>
       <div className="mt-20 w-full flex flex-wrap items-center justify-between gap-x-7 gap-y-10">
-        <Achivements />
+        {aboutData.map((item, i)=> (
+            <Achivements key={i} title={item.title} amount={item.amount}>
+                {item.icon}
+            </Achivements>
+        ))}
+        
       </div>
     </div>
   );
