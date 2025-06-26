@@ -50,81 +50,53 @@ export const downloadIcon = <DownloadLineIcon />;
 export const arrowLeftIcon = <ArrowLeftSFillIcon />;
 
 export const aboutText =
-  " Hi, I'm Alif, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites, while also using design tools like Photoshop and Figma to create visually appealing and user-friendly  interfaces. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience.";
+  " Hi, I'm Alif, a web developer & designer. I blend the technical  skills of web development with the creative aspects of web design. I code in HTML, CSS, JavaScript, React, NextJS... to build functional and responsive websites. My role allows me to ensure that websites not only work well but also look great and provide an excellent user experience.";
 // End of About Me
 
 // Experience
 export const experienceData = [
   {
     year: 1,
-    title: "Foundation and Basics",
+    title: "SSC and Early Learning",
     education:
-      "High School Diploma: Focus on computer science, mathematics, and art/design courses.",
+      "High School : Complete secondary education with a focus on  science and mathematics.",
     experience: [
-      "Basic HTML/CSS: Learn through online tutorials and courses.",
-      "Personal Projects: Create simple personal websites or blogs.",
-    ],
+      "Self-Study: Begin learning Science and Mathmetics."
+      ]
   },
   {
     year: 2,
-    title: "Advanced Learning and Early Experience",
+    title: "HSC and Secondary Education",
     education:
-      "Associate’s Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.",
+      "Pursue advanced studies in Science and Mathematics.",
     experience: [
-      "Freelance Work: Take on small freelance projects to build a portfolio.",
-      "Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.",
+      "Part-Time Work: Engage in part-time jobs to gain work experience.",
     ],
   },
   {
     year: 3,
-    title: "Specialized Education and Real-World Application",
+    title: "BSc in Computer Science",
     education:
-      "Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).",
+      "Bachelor's Degree: Enroll in a BSc program with a focus on Computer Science.",
     experience: [
-      "Internships: Secure internships with tech companies or design agencies.",
-      "Contribute to Open Source: Collaborate on open-source projects.",
+      "Class Projects: Participate in group projects to apply theoretical knowledge.",
     ],
   },
   {
     year: 4,
-    title: "Building Expertise and Expanding Skills",
+    title: "Internship and Entry-Level Position",
     education:
-      "Certifications: Obtain certifications in advanced web technologies.",
+      "Internship: Secure an internship in a web development firm.",
     experience: [
-      "Full-Time Position: Work as a junior web developer or designer.",
+      "Full-Time Position: Work as a junior web developer.",
       "Portfolio Development: Continuously update your portfolio with professional and personal projects.",
-    ],
-  },
-  {
-    year: 5,
-    title: "Mastery and Leadership",
-    education:
-      "Workshops and Conferences: Attend industry events to stay updated.",
-    experience: [
-      "Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.",
-      "Freelance and Consulting: Consider starting a freelance business or consulting practice.",
     ],
   },
 ];
 
 // Skills
 export const skillsData = [
-  {
-    name: "Figma",
-    icon: "/skills/figma.png",
-  },
-  {
-    name: "Photoshop",
-    icon: "/skills/photoshop.png",
-  },
-  {
-    name: "Blender",
-    icon: "/skills/blender.png",
-  },
-  {
-    name: "VS Code",
-    icon: "/skills/vscode.png",
-  },
+  
   {
     name: "HTML",
     icon: "/skills/html.png",
@@ -162,8 +134,8 @@ export const skillsData = [
     icon: "/skills/framer.png",
   },
   {
-    name: "ThreeJS",
-    icon: "/skills/threejs.png",
+    name: "NestJS",
+    icon: "/skills/NestJS.svg",
   },
   {
     name: "NextJS",

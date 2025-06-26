@@ -81,7 +81,7 @@ const Experience = () => {
                   : "right-full translate-x-1/2 lg:right-1/2"
               }`}
             >
-              {date - experienceData.length + i + 1}
+              {/* {date - experienceData.length + i + 1} */}
             </div>
           </div>
         ))}
