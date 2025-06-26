@@ -23,23 +23,18 @@ import AwardFillIcon from "remixicon-react/AwardFillIcon";
 export const aboutData = [
   {
     title: "Github Repos",
-    amount: 348,
+    amount: 22,
     icon: <GithubFillIcon />,
   },
   {
     title: "Successful Projects",
-    amount: 227,
+    amount: 15,
     icon: <Projector2LineIcon />,
   },
   {
     title: "Satisfied clients",
-    amount: 176,
+    amount: 1,
     icon: <GroupLineIcon />,
-  },
-  {
-    title: "Awards and Recognition",
-    amount: 107,
-    icon: <AwardFillIcon />,
   },
 ];
 
